@@ -32,7 +32,7 @@ or download the css on github and include in your project.
 .cf:after { clear: both; }
 .cf {       *zoom: 1; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .cn-ns { clear: none; }
   .cl-ns { clear: left; }
   .cr-ns { clear: right; }
@@ -43,7 +43,7 @@ or download the css on github and include in your project.
   .cf-ns {       *zoom: 1; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .cn-m { clear: none; }
   .cl-m { clear: left; }
   .cr-m { clear: right; }
@@ -54,7 +54,7 @@ or download the css on github and include in your project.
   .cf-m {       *zoom: 1; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .cn-l { clear: none; }
   .cl-l { clear: left; }
   .cr-l { clear: right; }
