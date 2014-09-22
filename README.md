@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-clears)
 ## File Size
 
 1.1K clears.css
-754B clears.min.css
+754B clears.min.css 
+244B minified and gzipped
 
 ## The Code
 ```
