@@ -1,5 +1,6 @@
 {
   "name": "css-clears",
+  "style": "clears.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-clears",
   "description": "Css module of single purpose classes for clears",
