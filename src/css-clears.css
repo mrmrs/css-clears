@@ -16,14 +16,14 @@
 .cf {       *zoom: 1; }
 
 @media screen and (min-width: 48em) {
-  .cn-ns { clear: none; }
-  .cl-ns { clear: left; }
-  .cr-ns { clear: right; }
-  .cb-ns { clear: both; }
-  .cf-ns:before,
-  .cf-ns:after { content: " "; display: table; }
-  .cf-ns:after { clear: both; }
-  .cf-ns {       *zoom: 1; }
+  .cn-s { clear: none; }
+  .cl-s { clear: left; }
+  .cr-s { clear: right; }
+  .cb-s { clear: both; }
+  .cf-s:before,
+  .cf-s:after { content: " "; display: table; }
+  .cf-s:after { clear: both; }
+  .cf-s {       *zoom: 1; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
