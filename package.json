@@ -1,38 +1,44 @@
 {
   "name": "css-clears",
-  "style": "clears.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-clears",
-  "description": "Css module of single purpose classes for clears",
+  "version": "2.0.0",
+  "description": "Functional CSS for clears",
+  "style": "dist/clears.css",
+  "main": "dist/clears.css",
+  "exports": {
+    ".": "./dist/clears.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "clears"
+    "clears",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-clears": {
+  "homepage": "https://github.com/mrmrs/css-clears",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-clears.git"
+    "url": "https://github.com/mrmrs/css-clears.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-clears/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-clears/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
