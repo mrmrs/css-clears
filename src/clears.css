@@ -15,7 +15,7 @@
 .cf:after { clear: both; }
 .cf {       *zoom: 1; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .cn-s { clear: none; }
   .cl-s { clear: left; }
   .cr-s { clear: right; }
@@ -26,7 +26,7 @@
   .cf-s {       *zoom: 1; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .cn-m { clear: none; }
   .cl-m { clear: left; }
   .cr-m { clear: right; }
@@ -37,7 +37,7 @@
   .cf-m {       *zoom: 1; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .cn-l { clear: none; }
   .cl-l { clear: left; }
   .cr-l { clear: right; }
