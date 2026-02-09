@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-clears.css');
+const srcFile = path.join(__dirname, 'src', 'clears.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-clears.css',
+  filename: 'clears.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-clears.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'clears.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-clears.css',
+  filename: 'clears.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-clears.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'clears.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-clears.css     ${unminified.length} bytes`);
-console.log(`  dist/css-clears.min.css ${minified.length} bytes`);
+console.log(`  dist/clears.css     ${unminified.length} bytes`);
+console.log(`  dist/clears.min.css ${minified.length} bytes`);
